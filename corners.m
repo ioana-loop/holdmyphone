@@ -1,25 +1,23 @@
 
-I = imread('R-hand T-down.PNG')
-imshow(I)
+I = imread('R-hand T-down.PNG');
+imshow(I);
 figure;
 imcontour(I,3)
-imshow(I)
-imgradient(I)
-I=rgb2grey(RGB);
+imshow(I);
+imgradient(I);
 RGB=imread('R-hand T-down.png')
-I=rgb2gray(RGB)
+I=rgb2gray(RGB);
 
 imshow(I)
 
-points = detectBRISKFeatures(I)
-imshow(I); hold on;
+points = detectBRISKFeatures(I);
+imshow(I); h
+
+old on;
 plot(points.selectStrongest(20));
 clf
 heatmap(spreads_small);
-plot(x,y)
-plot(X,Y)
-plot(Nan, NaN)
-plot(nan, NaN)
+
 
 scatterhistogram(coordinates.X,coordinates.y);
 scatterhistogram(coordinates.X,coordinates.y);
